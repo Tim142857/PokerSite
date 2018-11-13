@@ -1,0 +1,29 @@
+{
+  "name": "pokersite",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "set DEBUG=pokersite:* & node ./bin/www"
+  },
+  "dependencies": {
+    "api-doc-generator": "0.0.2",
+    "body-parser": "^1.18.3",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "jsonwebtoken": "^8.3.0",
+    "morgan": "~1.9.0",
+    "mysql2": "^1.6.3",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth2": "^0.1.6",
+    "rootpath": "^0.1.2",
+    "sequelize": "^4.41.0",
+    "twig": "~0.10.3"
+  }
+}
