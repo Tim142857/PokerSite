@@ -11,6 +11,8 @@ var sequelize = require('server/models/config.js');
 var publicRouteur = require('server/routes/public');
 var usersRouter = require('server/routes/users');
 var clubsRouteur = require('server/routes/clubs');
+var tournamentsRouteur = require('server/routes/tournaments');
+
 var passport = require('passport');
 // var Strategy = require('passport-facebook').Strategy;
 
@@ -44,6 +46,7 @@ app.use(passport.session());
 app.use('/', publicRouteur);
 app.use('/users', usersRouter);
 app.use('/clubs', clubsRouteur);
+app.use('/tournaments', tournamentsRouteur);
 
 
 // catch 404 and forward to error handler
