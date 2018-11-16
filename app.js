@@ -18,9 +18,18 @@ var passport = require('passport');
 
 var bodyParser = require('body-parser');
 // var multer = require('multer');
+var allowCrossDomain = require('server/middlewares/allowCrossDomain')
 
 
 var app = express();
+app.use(allowCrossDomain);
+// app.use(function(req, res, next) {
+//   // console.log(req);
+//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
+//   res.header('Access-Control-Allow-Origin', '*');
+//   res.header('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
+//   next();
+// });
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))

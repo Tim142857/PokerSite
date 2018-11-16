@@ -12,7 +12,7 @@ const sequelize = new Sequelize(dbConf.db, dbConf.user, dbConf.password, {
 sequelize.sync().then(() => {
   console.log('############     Synchronisation db ok !    ############');
   const insertData = require('./insertFixtures')
-  insertData();
+  // insertData();
 });
 
 
