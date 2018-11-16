@@ -3,8 +3,8 @@ var passport = require('passport');
 var GoogleStrategy   = require( 'passport-google-oauth2' ).Strategy;
 var UserManager = require('server/managers/UserManager');
 
-const GOOGLE_CLIENT_ID = "632055118455-fnd9jb8ps0r9enari9vf4eq6pfkcvu9g.apps.googleusercontent.com";
-const GOOGLE_CLIENT_SECRET = "PWltPUOXbFPqE1mBmMz1R4dS";
+const GOOGLE_CLIENT_ID = "632055118455-q9a5bomebgtmmu50a483m7hbpgcu6u3f.apps.googleusercontent.com";
+const GOOGLE_CLIENT_SECRET = "pyCk1f9xwbhzaYuIX07QLoRG";
 
 passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,

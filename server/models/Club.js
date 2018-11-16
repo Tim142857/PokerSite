@@ -15,9 +15,9 @@ let Club = sequelize.define('club', {
   phone: {
     type: Sequelize.STRING
   },
-  image: {
-    type: Sequelize.STRING
-  },
+  // image: {
+  //   type: Sequelize.STRING
+  // },
   ghost: {
     type: Sequelize.BOOLEAN,
     defaultValue: false
