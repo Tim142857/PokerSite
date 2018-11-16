@@ -20,3 +20,9 @@ async function(req, res){
 
 
 module.exports = router;
+
+router.post('/',
+	async function(req , res){
+		var tournament = await TournamentManager.create(req.body);
+		res.send(tournament);
+	});

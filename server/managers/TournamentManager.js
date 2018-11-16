@@ -12,7 +12,14 @@ async function findAll(){
 }
 
 async function create(body){
-  //// TODO:
+  var tournament = {
+    name: body.name,
+    //date: date,
+    city: body.city
+  }
+
+  var createdTournament = await Tournament.create(tournament)
+  console.log(createdTournament)
   return createdTournament
 }
 

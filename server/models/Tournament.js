@@ -7,6 +7,17 @@ let Tournament = sequelize.define('tournament', {
     autoIncrement: true,
     primaryKey: true,
   },
+  name: {
+    type: Sequelize.STRING,
+    required: true
+  },
+  //date: {
+   // type: Sequelize.DATE,
+   // required: true
+  //},
+  city: {
+    type: Sequelize.STRING,
+  },
   ghost: {
     type: Sequelize.BOOLEAN,
     defaultValue: false

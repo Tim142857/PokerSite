@@ -4,7 +4,7 @@ module.exports = {
     host: 'localhost',
     port: '3306',
     user: 'root',
-    password: 'user',
+    password: 'Imuwy2964',
     db: 'pokersite',
     dialect: 'mysql',
     sync: { force: true },
